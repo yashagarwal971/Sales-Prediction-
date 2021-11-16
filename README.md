@@ -16,8 +16,6 @@ python
  ipynb<br>
  html<br>
 
-
-
 ### Instruction
 <li>Put the excel and python code in the same folder</li>
 <li>Need plotly account to run the code</li>
