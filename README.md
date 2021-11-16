@@ -16,13 +16,12 @@ python
  ipynb<br>
  html<br>
 
-### Visualization link: 
-https://chenchends.github.io/Tourism-data-analysis/
+
 
 ### Instruction
 <li>Put the excel and python code in the same folder</li>
 <li>Need plotly account to run the code</li>
 <li>Recommend use google chrome</li>
 
-### Author: Chen Chen
+
 
