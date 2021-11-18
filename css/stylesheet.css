@@ -11,7 +11,7 @@ body {
 .header {
   padding: 30px;
   text-align: center;
-  background: #ADD8E6;
+  background: #db9108;
 }
 
 .header h1 {
@@ -20,7 +20,7 @@ body {
 
 /* Style the top navigation bar */
 .topnav {
-  background-color: #708090;
+  background-color: #50585f;
   overflow: hidden;
   position: -webkit-sticky;
   position: sticky;
@@ -31,7 +31,7 @@ body {
 .topnav a {
   float: left;
   display: block;
-  color: #FFDEAD;
+  color: #61baf5;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -176,9 +176,9 @@ column {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #E6B0AA;
+  background: #db9108;
   margin-top: 20px;
-  color: #571B7E ;
+  color: #000000 ;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
