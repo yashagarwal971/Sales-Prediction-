@@ -7,7 +7,7 @@
 import pandas as pd
 import numpy as np
 import plotly
-import plotly.plotly as py
+import chart_studio.plotly as py
 import plotly.graph_objs as go
 import warnings
 #!pip install plotly_express
