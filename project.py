@@ -10,7 +10,7 @@ import plotly
 import chart_studio.plotly as py
 import plotly.graph_objs as go
 import warnings
-#!pip install plotly_express
+
 import plotly_express as px
 
 
@@ -18,7 +18,7 @@ import plotly_express as px
 
 
 #sign in plotly
-py.sign_in("name", "APIkey")
+py.sign_in("Aneesh2000", "xEXVpLAIGKQtLNikykWg")
 # set all the data to 2 decimal
 pd.set_option("display.float.format", lambda x: "%.2f" % x)
 #ignore warning message 
@@ -104,6 +104,7 @@ inbound_map = px.choropleth(inbound_tourists_stack,
                             #set the map type
                             projection="natural earth")
 inbound_map
+py.iplot(inbound_map)
 #plotly.offline.plot(inbound_map, filename="inbound_map")
 
 
@@ -138,6 +139,7 @@ inbound_top = px.line(top_inbound_data,
                       line_shape="linear", 
                       title="Top countries that attract tourists")
 inbound_top
+py.iplot(inbound_top)
 #plotly.offline.plot(inbound_top, filename="inbound_top")
 
 
@@ -182,6 +184,7 @@ growth_bar = px.bar(growth_inbound_data,
                          barmode="group",
                          title="Top attractive countries inbound tourists yearly growth rate")
 growth_bar
+py.iplot(growth_bar)
 #plotly.offline.plot(growth_bar, filename="growth_bar")
 
 
@@ -239,6 +242,7 @@ receipts_bar = px.bar(receipts_clean_stack,
                       hover_name="Country Name",
                       title="Top countries with highest receipts")
 receipts_bar
+py.iplot(receipts_bar)
 #plotly.offline.plot(receipts_bar, filename="receipts_bar")
 
 
@@ -299,6 +303,7 @@ export_polar = px.bar_polar(top_country_export,
                             animation_frame="Year", 
                             title="Top countries ranked by tourism share of exports")
 export_polar
+py.iplot(export_polar)
 #plotly.offline.plot(export_polar, filename="export_polar")
 
 
@@ -348,6 +353,7 @@ gdp_inbound_plot = px.scatter(gdp_inbound,
                               labels="Amount(number of people)",
                               title="Correlation between GDP and number of inbound tourists")
 gdp_inbound_plot
+py.iplot(gdp_inbound_plot)
 #plotly.offline.plot(gdp_inbound_plot, filename="gdp_inbound_plot")
 
 
@@ -391,6 +397,7 @@ outbound_map = px.scatter_geo(outbound_tourists_stack,
                               color_continuous_scale=px.colors.sequential.Aggrnyl,
                               projection="natural earth")
 outbound_map
+py.iplot(outbound_map)
 #plotly.offline.plot(outbound_map, filename="outbound_map")
 
 
@@ -426,6 +433,7 @@ outbound_top = px.line(top_outbound_data,
                        line_shape="linear",
                        title="Top countries where people like to travel")
 outbound_top
+py.iplot(outbound_top)
 #plotly.offline.plot(outbound_top, filename="outbound_top")
 
 
@@ -518,6 +526,7 @@ gdp_outbound_plot = px.scatter(gdp_outbound,
                                log_y=True,
                                title="Correlation between GDP and outbound tourists")
 gdp_outbound_plot
+py.iplot(gdp_outbound_plot)
 #plotly.offline.plot(gdp_outbound_plot, filename="gdp_outbound_plot")
 
 
@@ -568,6 +577,7 @@ expenditure_bar = px.bar(top_expenditure_p_stack,
                          hover_name="Country Name",
                          title="Top countries per capita expenditure in travel(exclude international transportation)")
 expenditure_bar
+py.iplot(expenditure_bar)
 #plotly.offline.plot(expenditure_bar, filename="expenditure_bar")
 
 
