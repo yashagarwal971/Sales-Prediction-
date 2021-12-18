@@ -12,11 +12,21 @@ Original file is located at
 import numpy as np
 from sklearn import linear_model
 import pandas as pd
+import plotly
+
 import plotly_express as px
 from sklearn.tree import DecisionTreeRegressor
 import csv
 import chart_studio.plotly as py
-from xgboost import XGBClassifier
+#from xgboost import XGBClassifier
+
+
+#sign in plotly
+py.sign_in("monika2310","hY1AGsTUAtloR3qV6x1d")
+# set all the data to 2 decimal
+pd.set_option("display.float.format", lambda x: "%.2f" % x)
+#ignore warning message 
+#warnings.filterwarnings("ignore")
 
 def data_selection(df,i,j):
     df = pd.merge(country_list, df, left_on = "Country Code", right_on = "Country Code", how="left")
@@ -51,7 +61,7 @@ def predictions_LR_DT(group_data,topic,new_years):
     reg_LR.fit(data_year,y_val)
     result_LR=reg_LR.predict(data_new_years)
 
-    reg_DT = XGBClassifier()
+    reg_DT = DecisionTreeRegressor()
     reg_DT.fit(data_year, y_val)
     result_DT = reg_DT.predict(data_new_years)
     for j in range(len(new_years)):
@@ -110,34 +120,40 @@ outbound_tourists_new=pd.read_csv("predictions_OUT_LR.csv")
 gdp_inbound = inbound_tourists_new.merge(gdp_new, left_on=("Country Name","Year"), right_on=("Country Name","Year"))
 gdp_outbound = outbound_tourists_new.merge(gdp_new, left_on=("Country Name","Year"), right_on=("Country Name","Year"))
 
-inbound_map = px.choropleth(predicted_INB_LR, 
+inbound_map_pred = px.choropleth(predicted_INB_LR, 
                             locations="Country Code", 
                             color="Amount", 
                             hover_name="Country Name",
                             animation_frame="Year",
                             color_continuous_scale=px.colors.sequential.BuGn,
                             projection="natural earth")
-inbound_map
+inbound_map_pred
+#py.plot(inbound_map_pred)
+#plotly.offline.plot(inbound_map_pred, filename="inbound_map_pred")
 
-GDP_map = px.choropleth(predicted_GDP_LR, 
+GDP_map_pred = px.choropleth(predicted_GDP_LR, 
                             locations="Country Code", 
                             color="GDP", 
                             hover_name="Country Name",
                             animation_frame="Year",
                             color_continuous_scale=px.colors.sequential.BuGn,
                             projection="natural earth")
-GDP_map
+GDP_map_pred
+#py.plot(GDP_map_pred)
+#plotly.offline.plot(GDP_map_pred, filename="GDP_map_pred")
 
-outbound_map = px.choropleth(predicted_OUT_LR, 
+outbound_map_pred = px.choropleth(predicted_OUT_LR, 
                             locations="Country Code", 
                             color="Outbound", 
                             hover_name="Country Name",
                             animation_frame="Year",
                             color_continuous_scale=px.colors.sequential.BuGn,
                             projection="natural earth")
-outbound_map
+outbound_map_pred
+#py.plot(outbound_map_pred)
+#plotly.offline.plot(outbound_map_pred, filename="outbound_map_pred")
 
-gdp_inbound_plot = px.scatter(gdp_inbound, 
+gdp_inbound_plot_pred = px.scatter(gdp_inbound, 
                               x="Amount", 
                               y="GDP",
                               color_discrete_sequence = px.colors.qualitative.Vivid,
@@ -146,9 +162,11 @@ gdp_inbound_plot = px.scatter(gdp_inbound,
                               log_y=True, 
                               labels="Amount(number of people)",
                               title="Correlation between GDP and number of inbound tourists")
-gdp_inbound_plot
+gdp_inbound_plot_pred
+#py.plot(gdp_inbound_plot_pred)
+#plotly.offline.plot(gdp_inbound_plot_pred, filename="gdp_inbound_plot_pred")
 
-gdp_outbound_plot = px.scatter(gdp_outbound, 
+gdp_outbound_plot_pred = px.scatter(gdp_outbound, 
                               x="Outbound", 
                               y="GDP",
                               color_discrete_sequence = px.colors.qualitative.Vivid,
@@ -157,4 +175,6 @@ gdp_outbound_plot = px.scatter(gdp_outbound,
                               log_y=True, 
                               labels="Amount(number of people)",
                               title="Correlation between GDP and number of inbound tourists")
-gdp_outbound_plot
+gdp_outbound_plot_pred
+#py.plot(gdp_outbound_plot_pred)
+#plotly.offline.plot(gdp_outbound_plot_pred, filename="gdp_outbound_plot_pred")

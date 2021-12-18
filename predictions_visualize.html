@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/stylesheet1.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>World Tourism Sales Prediction</h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html"><b>Home page</b></a>
+  <a href="page1.html"><b>inbound tourism analysis</b></a>
+  <a href="page2.html"><b>outbound tourists analysis</b></a>
+  <a href="page3.html"><b>GDP and tourism</b></a>
+  <a href="page5.html"><b>Prediction</b></a>
+  <a href="page4.html"><b>Summary</b></a>
+  <a href="predictions_visualize.html"><b>Predictions</b></a>
+</div>
+
+<div class="row">
+        <div class="card">
+            <h2>Predicted World inbound tourists distribution</h2>
+            <embed width="100%" height="620px" scrolling="no" src="image/inbound_map_pred.html">
+            <!-- <button id="show-code" onclick="myFunction()">show python code</button>           
+            <div id="myDIV"> <img width="70%" src="image/outbound_map.JPG" ></div>
+            <script src="js/function.js"></script> -->
+            <h4>The world map shows from 2018 to 2028, people in Europe, North America and East Asia like traveling abroad the most. And China is the fastest growing country of outbound traveler.</h4>
+      </div>
+      <div class="card">
+        <h2>Predicted GDP distribution</h2>
+        <embed width="100%" height="620px" scrolling="no" src="image/GDP_map_pred.html">
+        <!-- <button id="show-code" onclick="myFunction1()">show python code</button>           
+        <div id="myDIV1"> <img width="60%" src="image/outbound_top.JPG"></div>
+         <script src="js/function.js"></script> -->
+        <h4>The world map shows GDP from 2018 to 2028</h4>
+      </div>
+
+     <div class="card">
+        <h2>Predicted World outbound tourists distribution</h2>
+        <embed width="100%" height="620px" scrolling="no" src="image/outbound_map_pred.html">
+        <!-- <button id="show-code" onclick="myFunction2()">show python code</button>           
+        <div id="myDIV2"> <img width="50%" src="image/outbound_population_compare.JPG"></div>
+        <script src="js/function.js"></script> -->
+        <h4>The world map shows outbound tourism from 2018 to 2028</h4>
+      </div>
+      <div class="leftcolumn">
+         <div class="card">
+             <h3>Correlation between GDP and inbound tourists(number of people)</h3>
+             <embed width="100%" height="620px" scrolling="no" src="image/gdp_inbound_plot_pred.html" align="center">
+             <h4>There is positive correlation between the GDP and the number of <span style="color:red;">inbound</span> tourists people, which indicates that the develpment in tourist industry will benefit the country's GDP.</h4>
+           </div>
+      </div>
+      <div class="rightcolumn">
+         <div class="card">
+            <h3>Correlation between GDP and outbound tourists(number of people)</h3>
+            <embed width="100%" height="620px" scrolling="no" src="image/gdp_outbound_plot_pred.html" align="center">
+            <h4>There is positive correlation between the GDP and the number of <span style="color:red;">outbound</span> tourists people, which indicates that more people choose to travel aboard as economy grows. </h4>
+         </div>
+      </div>
+</div>
+
+<div class="footer">
+  <h3>Data Mining for Tourism Industry</h3>
+  <h3>NIIT University - Capstone Project</h3>
+</div>
+
+</body>
+</html>
