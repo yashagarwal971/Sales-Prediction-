@@ -1,0 +1,8 @@
+TourismDataAnalysis.py
+setup.py
+TourismDataAnalysis.egg-info/PKG-INFO
+TourismDataAnalysis.egg-info/SOURCES.txt
+TourismDataAnalysis.egg-info/dependency_links.txt
+TourismDataAnalysis.egg-info/namespace_packages.txt
+TourismDataAnalysis.egg-info/top_level.txt
+TourismDataAnalysis.egg-info/zip-safe

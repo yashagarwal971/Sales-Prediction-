@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TourismDataAnalysis_tests.HelloWorldTest-20211219190112" tests="2" file="TourismDataAnalysis_tests.py" time="0.020" timestamp="2021-12-19T19:01:14" failures="2" errors="0" skipped="0">
+	<testcase classname="TourismDataAnalysis_tests.HelloWorldTest" name="test_2" time="0.015" timestamp="2021-12-19T19:01:14">
+		<failure type="VerificationError" message="
+Wanted but not invoked:
+
+    write(1633890.9090909064)
+
+Instead got:
+
+    write('1633890.9090909064')
+
+"><![CDATA[Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\unittest\case.py", line 592, in run
+    self._callTestMethod(testMethod)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\unittest\case.py", line 550, in _callTestMethod
+    method()
+  File "c:\users\anees\onedrive\desktop\tourismdataanalysis\src\unittest\python\TourismDataAnalysis_tests.py", line 18, in test_2
+    verify(out).write(1633890.9090909064)
+  File "C:\Users\anees\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\mockito\invocation.py", line 242, in __call__
+    self.verification.verify(self, len(matched_invocations))
+  File "C:\Users\anees\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\mockito\verification.py", line 94, in verify
+    raise VerificationError(
+mockito.verification.VerificationError: 
+Wanted but not invoked:
+
+    write(1633890.9090909064)
+
+Instead got:
+
+    write('1633890.9090909064')
+
+
+]]></failure>
+	</testcase>
+	<testcase classname="TourismDataAnalysis_tests.HelloWorldTest" name="test_should_issue_hello_world_message" time="0.005" timestamp="2021-12-19T19:01:14">
+		<failure type="VerificationError" message="
+Wanted but not invoked:
+
+    write(0.0)
+
+Instead got:
+
+    write('0.0')
+
+"><![CDATA[Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\unittest\case.py", line 592, in run
+    self._callTestMethod(testMethod)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\unittest\case.py", line 550, in _callTestMethod
+    method()
+  File "c:\users\anees\onedrive\desktop\tourismdataanalysis\src\unittest\python\TourismDataAnalysis_tests.py", line 12, in test_should_issue_hello_world_message
+    verify(out).write(0.0)
+  File "C:\Users\anees\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\mockito\invocation.py", line 242, in __call__
+    self.verification.verify(self, len(matched_invocations))
+  File "C:\Users\anees\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\mockito\verification.py", line 94, in verify
+    raise VerificationError(
+mockito.verification.VerificationError: 
+Wanted but not invoked:
+
+    write(0.0)
+
+Instead got:
+
+    write('0.0')
+
+
+]]></failure>
+	</testcase>
+</testsuite>

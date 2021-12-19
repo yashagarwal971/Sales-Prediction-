@@ -1,0 +1,36 @@
+running clean
+'build\lib' does not exist -- can't clean it
+'build\bdist.win-amd64' does not exist -- can't clean it
+'build\scripts-3.9' does not exist -- can't clean it
+running sdist
+running egg_info
+creating TourismDataAnalysis.egg-info
+writing TourismDataAnalysis.egg-info\PKG-INFO
+writing dependency_links to TourismDataAnalysis.egg-info\dependency_links.txt
+writing namespace_packages to TourismDataAnalysis.egg-info\namespace_packages.txt
+writing top-level names to TourismDataAnalysis.egg-info\top_level.txt
+writing manifest file 'TourismDataAnalysis.egg-info\SOURCES.txt'
+reading manifest file 'TourismDataAnalysis.egg-info\SOURCES.txt'
+writing manifest file 'TourismDataAnalysis.egg-info\SOURCES.txt'
+warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
+
+running check
+warning: Check: missing required meta-data: url
+
+warning: Check: missing meta-data: either (author and author_email) or (maintainer and maintainer_email) should be supplied
+
+creating TourismDataAnalysis-1.0.dev0
+creating TourismDataAnalysis-1.0.dev0\TourismDataAnalysis.egg-info
+copying files to TourismDataAnalysis-1.0.dev0...
+copying TourismDataAnalysis.py -> TourismDataAnalysis-1.0.dev0
+copying setup.py -> TourismDataAnalysis-1.0.dev0
+copying TourismDataAnalysis.egg-info\PKG-INFO -> TourismDataAnalysis-1.0.dev0\TourismDataAnalysis.egg-info
+copying TourismDataAnalysis.egg-info\SOURCES.txt -> TourismDataAnalysis-1.0.dev0\TourismDataAnalysis.egg-info
+copying TourismDataAnalysis.egg-info\dependency_links.txt -> TourismDataAnalysis-1.0.dev0\TourismDataAnalysis.egg-info
+copying TourismDataAnalysis.egg-info\namespace_packages.txt -> TourismDataAnalysis-1.0.dev0\TourismDataAnalysis.egg-info
+copying TourismDataAnalysis.egg-info\top_level.txt -> TourismDataAnalysis-1.0.dev0\TourismDataAnalysis.egg-info
+copying TourismDataAnalysis.egg-info\zip-safe -> TourismDataAnalysis-1.0.dev0\TourismDataAnalysis.egg-info
+Writing TourismDataAnalysis-1.0.dev0\setup.cfg
+creating dist
+Creating tar archive
+removing 'TourismDataAnalysis-1.0.dev0' (and everything under it)

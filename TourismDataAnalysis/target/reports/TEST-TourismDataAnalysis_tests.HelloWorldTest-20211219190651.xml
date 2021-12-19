@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TourismDataAnalysis_tests.HelloWorldTest-20211219190651" tests="4" file="TourismDataAnalysis_tests.py" time="0.009" timestamp="2021-12-19T19:06:53" failures="0" errors="0" skipped="0">
+	<testcase classname="TourismDataAnalysis_tests.HelloWorldTest" name="test_1" time="0.002" timestamp="2021-12-19T19:06:53"/>
+	<testcase classname="TourismDataAnalysis_tests.HelloWorldTest" name="test_2" time="0.003" timestamp="2021-12-19T19:06:53"/>
+	<testcase classname="TourismDataAnalysis_tests.HelloWorldTest" name="test_3" time="0.002" timestamp="2021-12-19T19:06:53"/>
+	<testcase classname="TourismDataAnalysis_tests.HelloWorldTest" name="test_4" time="0.002" timestamp="2021-12-19T19:06:53"/>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TourismDataAnalysis_tests.HelloWorldTest-20211219184541" tests="2" file="TourismDataAnalysis_tests.py" time="0.007" timestamp="2021-12-19T18:45:43" failures="0" errors="1" skipped="0">
+	<testcase classname="TourismDataAnalysis_tests.HelloWorldTest" name="test_2" time="0.002" timestamp="2021-12-19T18:45:43"/>
+	<testcase classname="TourismDataAnalysis_tests.HelloWorldTest" name="test_should_issue_hello_world_message" time="0.005" timestamp="2021-12-19T18:45:43">
+		<error type="TypeError" message="'Dummy' object is not subscriptable"><![CDATA[Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\unittest\case.py", line 592, in run
+    self._callTestMethod(testMethod)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.2544.0_x64__qbz5n2kfra8p0\lib\unittest\case.py", line 550, in _callTestMethod
+    method()
+  File "c:\users\anees\onedrive\desktop\tourismdataanalysis\src\unittest\python\TourismDataAnalysis_tests.py", line 12, in test_should_issue_hello_world_message
+    verify(out[0]).write(0.0)
+TypeError: 'Dummy' object is not subscriptable
+]]></error>
+	</testcase>
+</testsuite>

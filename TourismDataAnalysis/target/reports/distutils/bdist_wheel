@@ -1,0 +1,38 @@
+running clean
+'build\lib' does not exist -- can't clean it
+'build\bdist.win-amd64' does not exist -- can't clean it
+'build\scripts-3.9' does not exist -- can't clean it
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build\lib
+copying TourismDataAnalysis.py -> build\lib
+c:\users\anees\onedrive\desktop\tourismdataanalysis\.pybuilder\plugins\cpython-3.9.9.final.0\lib\site-packages\setuptools\command\install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+installing to build\bdist.win-amd64\wheel
+running install
+running install_lib
+creating build\bdist.win-amd64
+creating build\bdist.win-amd64\wheel
+copying build\lib\TourismDataAnalysis.py -> build\bdist.win-amd64\wheel\.
+running install_egg_info
+running egg_info
+writing TourismDataAnalysis.egg-info\PKG-INFO
+writing dependency_links to TourismDataAnalysis.egg-info\dependency_links.txt
+writing namespace_packages to TourismDataAnalysis.egg-info\namespace_packages.txt
+writing top-level names to TourismDataAnalysis.egg-info\top_level.txt
+reading manifest file 'TourismDataAnalysis.egg-info\SOURCES.txt'
+writing manifest file 'TourismDataAnalysis.egg-info\SOURCES.txt'
+Copying TourismDataAnalysis.egg-info to build\bdist.win-amd64\wheel\.\TourismDataAnalysis-1.0.dev0-py3.9.egg-info
+running install_scripts
+creating build\bdist.win-amd64\wheel\TourismDataAnalysis-1.0.dev0.dist-info\WHEEL
+creating 'dist\TourismDataAnalysis-1.0.dev0-py3-none-any.whl' and adding 'build\bdist.win-amd64\wheel' to it
+adding 'TourismDataAnalysis.py'
+adding 'TourismDataAnalysis-1.0.dev0.dist-info/METADATA'
+adding 'TourismDataAnalysis-1.0.dev0.dist-info/WHEEL'
+adding 'TourismDataAnalysis-1.0.dev0.dist-info/namespace_packages.txt'
+adding 'TourismDataAnalysis-1.0.dev0.dist-info/top_level.txt'
+adding 'TourismDataAnalysis-1.0.dev0.dist-info/zip-safe'
+adding 'TourismDataAnalysis-1.0.dev0.dist-info/RECORD'
+removing build\bdist.win-amd64\wheel

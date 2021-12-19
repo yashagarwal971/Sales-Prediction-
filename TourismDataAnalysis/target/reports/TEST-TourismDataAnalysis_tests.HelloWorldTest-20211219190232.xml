@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TourismDataAnalysis_tests.HelloWorldTest-20211219190232" tests="2" file="TourismDataAnalysis_tests.py" time="0.004" timestamp="2021-12-19T19:02:33" failures="0" errors="0" skipped="0">
+	<testcase classname="TourismDataAnalysis_tests.HelloWorldTest" name="test_2" time="0.002" timestamp="2021-12-19T19:02:33"/>
+	<testcase classname="TourismDataAnalysis_tests.HelloWorldTest" name="test_should_issue_hello_world_message" time="0.002" timestamp="2021-12-19T19:02:33"/>
+</testsuite>
