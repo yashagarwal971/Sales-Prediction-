@@ -27,7 +27,7 @@ class HelloWorldTest(unittest.TestCase):
         out = mock()
         val_4(out)
         
-        verify(out).write('102763.63636363624')
+        verify(out).write(102763.63636363624)
         
         
         
